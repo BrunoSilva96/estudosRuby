@@ -1,3 +1,5 @@
+#Exercicio proposto pelo professor.
+
 result = ''
 
 loop do

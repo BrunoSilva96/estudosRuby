@@ -69,3 +69,35 @@ ITERAÇÕES
 EACH - Percorre uma coleção de forma parecida ao FOR, porém, não sobreescrevendo o valor da variável fora da estrutura de repetição
 MAP - Cria um array baseando-se em valores de outro array existente.
 SELECT - Realiza uma seleção de elementos presentes em uma collection através de uma condição pré deficnida. Traz como resultado somente os valores que passam nesta condição.
+
+---
+
+MÉTODOS - Métodos são uma forma de organizar instruções em um programa, permitindo que trechos de códigos sejam reutilizados.
+
+Exemplo:
+
+         def hello name
+            puts "Olá #{name}
+         end
+
+         hello "Bruno"
+         hello "Yuri"
+
+GEMS - Gem é um pacote que oferece funcionalidades a dim de resulver uma necessidade específica de um programa Ruby.
+Pense como o conceito de biblioteca em outras linguagens de programação.
+
+---
+
+POO -> Programação Orientada a Objeto
+
+É um Paradigma de programação criado paralidar com softwares grandes e complexos. é um conceito seguido não só pelo Ruby, mas também por várias outras linguagens de programação como Java, Python, C++, etc.
+
+4 PILARES (POO)
+
+1 ABSTRAÇÃO - Ação de abstrair uma entidade do mundo real e transformá-la em uma classe.
+
+2 ENCAPSULAMENTO - Ato de dividir umprograma em diversas partes tornando-o flexível, fácil de modificar e incluir novas funcionalidades.
+
+3 HERANÇA - Habilidade de criar uma Classe com características de outra existente. A herança promove o reuso e reaproveitamento de código.
+
+4 POLIMORFISMO - Capacidade de utilizar um método de diferentes formas para diferentes Objetos.
