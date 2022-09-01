@@ -101,3 +101,36 @@ POO -> Programação Orientada a Objeto
 3 HERANÇA - Habilidade de criar uma Classe com características de outra existente. A herança promove o reuso e reaproveitamento de código.
 
 4 POLIMORFISMO - Capacidade de utilizar um método de diferentes formas para diferentes Objetos.
+
+CLASSE - O que é? Tendo como exemplo o objeto carro, pense em uma classe como a "planta" deste carro. Com ela é possível construir vários carros.
+
+OBJETO - Oque é? Por definição, objeto é toda coisa material que pode ser percebida pelos sentidos, como por exemplo um carro, livro, cachorro, caneta, avião e etc. Na programação um objeto é a representação d eum objeto no mundo real.
+Todos estes objetos apresentam duas características em comum: Informações e Comportamentos.
+
+Exemplo:
+
+         class Cachorro
+
+         Informações                                  Em POO chamamos as
+         Raça: Pitbull                                informações de attributos
+         Peso: 26 Quilos                              e os comportamentos de
+         Idade: 2 Anos                                methods.
+         Comportamento: Late, Come, Corre
+
+REQUIRE - Na aula 5 aprendemos a utilizar o require para carregar arquivos de uma gem e assim poder escrever códigos com funcionalidades desta biblioteca.
+Com ele tambem é possível carregar arquivos em ruby que foram escritos por você.
+
+ESCOPO DAS VARIÁVEIS - O escopo define onde a variável vai estar disponível dentro do programa.
+No ruby existem 4 tipos:
+1 - Variável Local -> É declarada com a primeira letra do seu nome sendo uma letraminúscula ou sublinhado. Pode ser acessada apenas onde foi criada. Por exemplo, se você definiu uma variável local dentro de uma classe ela estará disponível apenas dentro desta classe, se a definiu dentro de um método, conseguirá acessá-la apenas dentro deste método e assim por diante.
+
+2 - Variável Global -> Declarada com o prefixo $. Seu uso é FORTEMENTE DESENCORAJADO pois além de servisível em qualquer lugar do código, também pode ser alterada em inúmeros locais ocasionando dificuldades no rastreamento de bugs.
+
+3 - Variável de Classe -> É declarada com o prefixo @@. Pode ser acessada em qualquer lugar da classe onde foi declarada e seu valor é compartilhado entre todas asinstâncias de sua classe.
+
+4 - Variável de Instancia -> Seu nome começa com o símbolo @. Semelhante a variável de classe, tendo como única diferença o valor que não é compartilhado entre todas as instâncias de sua classe.
+
+ATRIBUTOS - Atributos (ou variáveis de instância) no Ruby são sempre privados e começam com @, eles só podemseralterados pelos métodos de um objeto.
+
+CONSTRUTORES - Toda vez que a instância de uma classe é criada, o Ruby procura por um método chamado **initialize**.
+Você pode criar este método para especificar valores padrões durante a construção do objeto.
