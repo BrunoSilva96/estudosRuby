@@ -134,3 +134,64 @@ ATRIBUTOS - Atributos (ou variáveis de instância) no Ruby são sempre privados
 
 CONSTRUTORES - Toda vez que a instância de uma classe é criada, o Ruby procura por um método chamado **initialize**.
 Você pode criar este método para especificar valores padrões durante a construção do objeto.
+
+RUBY AVANÇADO
+
+BLOCKS- Um bloco pode ser entendido com uma função anônima, ou seja, uma função sem nome. É definido entre o do..end ou colchetes e da mesma forma que os métodos que você viu até agora, pode receber parâmetros para sua execução.
+
+LAMBDA - Lambdas são similares aos block, mas podemsersalvas em variaveis para serem reutilizadas.
+
+MODULES - Possuem 2 funções. NAMESPACE e MIXINS
+NAMESPACE - Serve como um container para agrupar objetos relacionados (classes, constantes, métodos ou outrosmodules).
+
+MIXINS - Serve para incluir funcionalidades extras as classes.
+
+REGEX - As expressões regulares são notações para representar padrões em string, elas servem para validar entradas de dados ou fazer busca e extração de informações em textos.
+
+Exemplo de criação - /regex/ ou %r{regex} ou Regexp.new('regex')
+Exemplos de comparação -
+Operador '=~' => /by/ =~ 'ruby'
+
+Método match - phrase
+"Hellow, how are you?"
+Método -> match_data = /how/.match(phrase) O retorno vai ser um match
+
+match_data.pre_match
+O retorno vai ser "Hellow, " o que vem antes da palavra que estamos tentando encontrar
+
+match_data.post_match
+O retorno vai ser " are you?" o que vem depois
+
+Metacharacters and Escapes
+/\?/.match('Tudo bem?')
+O retorno é que deu match
+
+Character classes
+/[t]texto/.match('texto começando com t')
+O retorno é que deu match
+
+/[1-5]/.match('123')
+O retorno é que da match
+/[a-z]/.match('Oi')
+Serve com strings tambem, conta se for maiuscula ou minuscula, nesse caso so da match com o 'i'
+/A\d/.match('A4')
+O 'd' serve pra pegar numeros decimais, então retorna um match "A4"
+
+Repetição Regex
+/\d{2}-\d{5}-\d{4}/.match('73-99999-9999)
+
+TIME - O Ruby conta com uma classe chamada **Time** para representar datas e horas.
+
+time = Time.now = Imprime o atual horario
+puts time.year = Pega somente o ano
+puts time.month = Pega somente o mês
+puts time.day = Pega somente o dia
+time.strftime('%d/%m/%y') = devolve a data formatada
+puts time.sartuday? = devolve se é true ou false
+
+METHOD MISSING - Ele é utilizado para interceptar chamadas a métodos que não existem.
+
+SELF - No Ruby, self é uma variável especial que aponta para o objeto atual.
+
+MÉTODOS PRIVATE E PROTECTED - Por padrão, todos os métodos definidos são públicos. Isso significa que eles podem ser acessados por qualquer um.
+Mas além dos métodos públicos, existem outros dois tipos de métodos chamdos private e protected.
