@@ -195,3 +195,8 @@ SELF - No Ruby, self é uma variável especial que aponta para o objeto atual.
 
 MÉTODOS PRIVATE E PROTECTED - Por padrão, todos os métodos definidos são públicos. Isso significa que eles podem ser acessados por qualquer um.
 Mas além dos métodos públicos, existem outros dois tipos de métodos chamdos private e protected.
+
+CHAMADAS WEB - Através de chhamadas Web podemos conectar o nosso software a outros programas através da internet. Então veremos alguns exemplos de como fazer isso com a Lib Net::HTTP do Ruby.
+
+WEB SCRAPING - Através do Web Scraping conseguimos extrair dados de sites, como por exemplo: resultados dos jogos de futebol de um portal de notícias, uma lista de posts de um blog e etc.
+Para fazermos isto, usaremos uma biblioteca chamada Nkogiri, que nos ajudará a encontrar as informações dentro das estruturas HTML dos sites.
